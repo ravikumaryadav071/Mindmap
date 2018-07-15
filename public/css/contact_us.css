@@ -1,0 +1,88 @@
+.main-content {
+    padding-top: 72px;
+}
+
+.article {
+  padding: 10px;
+}
+
+.article .article-head, .article .article-head-styled {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.article .article-head-styled {
+  /*background: white;*/
+}
+
+.shadow-right {
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.shadow-left {
+  -moz-box-shadow: -1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: -1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.article .right {
+  right: 10px;
+}
+
+.article .article-head-styled p, .article .article-head p {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.article .article-head-styled img, .article .article-head img {
+  width: 100%;
+  padding: 2px;
+  height: auto;
+}
+
+.article .article-head {
+  display: none;
+}
+
+.article .article-content {
+  text-align: center;
+}
+
+.article .article-content p {
+  text-align: center;
+  margin: 0;
+  display: inline;
+  font-size: 1.2rem;
+}
+
+.form-field {
+  padding: 2px;
+  margin: 10px 0px;
+}
+
+.form-field * {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.form-field .error {
+  color: red;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    /*.article .article-head {
+      display: block;
+    }
+    .article .article-head-styled {
+      display: none;
+    }
+    .article .article-head img {
+      max-height: 50vh;
+      width: auto;
+    }*/
+}

@@ -1,0 +1,190 @@
+body {
+  overflow-x: hidden;
+  font-family: 'PT sans', sans-serif;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: 100;
+  background-color: #212121;
+  height: 100%;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-x: hidden;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-bar .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2em;
+  margin-left: 50px;
+  padding: 8px;
+  color: #BDBDBD;
+  cursor: pointer;
+}
+
+.nav-bar-item, .nav-bar .collapse-item {
+  margin-left: 10%;
+  padding-top: 10px;
+  color: #E0E0E0;
+  cursor: pointer;
+}
+
+.nav-bar-item {
+  font-size: 1.5em;
+}
+
+.nav-bar .collapse-item {
+  font-size: 1em;
+}
+
+.nav-bar-item:hover, .collapse-item:hover {
+  color: #FAFAFA;
+}
+
+.nav-bar-item:hover {
+  font-size: 1.6em;
+}
+
+.collapse-item:hover {
+  font-size: 1.1em;
+}
+
+.hamburger, .menu-bar > * {
+  font-size: 2rem;
+}
+
+.menu-bar > * {
+  display: inline-block;
+}
+
+.company-name {
+  letter-spacing: -0.3rem;
+}
+
+.collapse-icon {
+  right: 10%;
+  transition: transform 0.5s;
+  padding-top: 1.5%;
+  position: absolute;
+}
+
+.collapse-icon-open {
+  transform: rotate(90);
+  ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari 3-8 */
+  transform: rotate(90deg);
+}
+
+.company-name li {
+  opacity: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  display: inline;
+  will-change: opacity padding;
+  animation-name: fade-in;
+}
+
+@keyframes fade-in {
+  0%{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    opacity: 0.4;
+  }
+  100% {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    opacity: 1;
+  }
+}
+
+.hamburger-icon {
+  transition: transform 0.5s;
+  text-decoration: none;
+  color: #212121;
+}
+
+.hamburger-icon-active{
+  ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari 3-8 */
+  transform: rotate(90deg);
+}
+
+.menu-bar {
+  position: fixed;
+  z-index: 1;
+  opacity: 0.5;
+  padding: 8px 0px 0px 8px;
+  background: #ffffff;
+  width: 100vw;
+}
+
+#main {
+  transition: margin-left .5s;
+  background-color: #ECEFF1;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .main-content {
+        padding-top: 72px;
+    }
+}
+.body-bg {
+  opacity: 0.4;
+  pointer-events: none;
+  overflow-x: hidden;
+}
+
+.content {
+  margin: 16px;
+}
+
+.zero-padding {
+  padding: 0px;
+}
+
+.background-teal {
+  background-color: #009688;
+}
+
+.background-indigo {
+  background-color: #3F51B5;
+}
+
+.background-pink {
+  background-color: #E91E63;
+}
+
+.background-blue {
+  background-color: #2196F3;
+}
+
+.background-green {
+  background-color: #8BC34A;
+}
+
+.background-orange {
+  background-color: #FFC107;
+}
+
+.text-white {
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+}

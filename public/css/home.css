@@ -1,0 +1,113 @@
+/*.carousel-item {
+  max-height: 100vh;
+  text-align: center;
+}
+
+.carousel-image {
+    max-height: 100vh;
+}*/
+
+.story-card .title {
+  font-size: 2rem;
+  top: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.story-card .head {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.story-card .head {
+  padding: 16px;
+}
+
+.story-card .content {
+  padding: 0 16px 16px 16px;
+}
+
+.story-card .title-left {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .story-card .title {
+        top: 0;
+    }
+    .story-card .title-right {
+      display: none;
+    }
+    .story-card .title-left {
+      display: block;
+    }
+}
+
+.caption-black {
+  color: #212121;
+}
+
+.jumbo-container {
+  height: 40vh;
+  background-color: yellow;
+  overflow: hidden;
+}
+
+.left-jumbo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  /*z-index: 1;*/
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  -o-transition: width 0.5s;
+}
+
+.top-jumbo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  /*z-index: 2;*/
+  transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+}
+
+.right-jumbo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+  /*z-index: 3;*/
+  transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -ms-transition: width 0.5s;
+  -o-transition: width 0.5s;
+}
+
+.bottom-jumbo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  /*z-index: 4;*/
+  max-height: 0;
+  transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+}
